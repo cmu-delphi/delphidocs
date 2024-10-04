@@ -1,0 +1,289 @@
+/* Navbar */
+.navbar {
+  transition: all 0.3s ease;
+  border-bottom: 3px solid $headings-color;
+  min-height: 45px;
+  background-color: $body-bg !important;
+}
+
+#navbar {
+	font-family: '"Source Serif Pro",Times,serif';
+}
+
+.navbar .navbar-brand {
+  font-family: '"Source Serif Pro",Times,serif';
+}
+
+.page-header {
+  border-bottom: none;
+}
+
+#hexlogo {
+  height: 40px;
+  float: left;
+  margin: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+img.logo {
+  width: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  #hexlogo {
+    height: 30px;
+  }
+  .navbar .navbar-brand {
+    padding-top: 13px;
+    line-height: 19px;
+    padding-left: 10px;
+  }
+  .navbar .navbar-form {
+    margin: 3px 5px 3px 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  /*
+  .navbar .navbar-brand {
+    padding-top: 10px;
+    padding-right: 0;
+    margin-right: -120px;
+    padding-left: 0px;
+    font-size: 1.2rem;
+  }
+  */
+
+  /*
+ .nav-text.text-muted.me-auto {
+    font-size: 0.8rem;
+ }
+ */
+
+  #logo img {
+    height: 15px !important;
+  }
+}
+
+// undo designer choice in pkgdown to add a lot of whitespace under h1
+@media (min-width: 576px){
+  .template-home .page-header {
+      min-height: 0;
+  }
+}
+
+/*
+.nav-text.text-muted.me-auto {
+  color: #3b88bfff !important;
+}
+*/
+
+/*
+main h1 img {
+  max-width: 120px;
+}
+*/
+
+/* Reference index. To make it very different from h2 */
+.template-reference-index h3 {
+  font-size: 1.5rem;
+}
+
+
+.heading-style, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.15;
+  margin: 2.75rem 0 1.05rem;
+}
+
+/* table of contents -------------------------------------------------------- */
+/*
+$pkgdown-toc-border-width: 3px !default;
+$pkgdown-toc-border-color: $primary !default;
+$pkgdown-toc-active-color: $primary !default;
+$pkgdown-toc-hover-bg: change-color($primary, $alpha: 0.2) !default;
+$pkgdown-toc-hover-color: $primary !default;
+*/
+
+// needed for scrollspy
+body {position: relative;}
+
+/*
+
+#toc > .nav {
+  margin-bottom: 1rem;
+
+  h2 {
+      font-size: $font-size-lg;
+  }
+
+  li { font-size: 90%;
+  }
+
+  a.nav-link {
+    color: inherit;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 2px;
+    @include border-radius(0);
+
+    &:hover, &:focus {
+      background-color: $pkgdown-toc-hover-bg;
+      color: $primary;
+      text-decoration: none;
+      font-weight: 700 !important;
+      border-left: $pkgdown-toc-border-width solid $pkgdown-toc-border-color;
+    }
+    &.active {
+      background-color: transparent !important;
+      color: $primary;
+      font-weight: 700 !important;
+      border-left: 3px solid $primary;
+    }
+  }
+}
+
+*/
+
+
+aside {
+  /*
+  a {
+    color: "#ff9900" !important;
+  }
+  */
+
+  padding-top: 1.5rem;
+  border-left: 2px solid $headings-color;
+
+  h2 {
+    margin-top: 1.2rem;
+    font-size: $font-size-lg;
+  }
+  .roles {
+    color: mix($body-color, $body-bg, 80%);
+  }
+
+  .list-unstyled li { margin-bottom: 0.5rem; }
+  .dev-status .list-unstyled li { margin-bottom: 0.1rem; }
+}
+
+// Add some visual distinction between content and "sidebar" on mobile
+@include media-breakpoint-down(sm) {
+  aside {
+    margin: 0.5rem;
+    width: calc(100vw - 1rem);
+    background-color: $gray-100;
+    border-color: $border-color;
+    @include border-radius($border-radius);
+
+    h2:first-child {
+      margin-top: 1rem;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    #logo > .img {
+
+}
+  .navbar .navbar-brand {
+    padding-top: 10px;
+    padding-right: 0;
+    margin-right: -120px;
+  }
+}
+
+
+/* Footer */
+
+
+/* Position hack to get full width footer even though pkgdown puts it inside a container
+ * See: https://css-tricks.com/full-width-containers-limited-width-parents/
+ */
+
+ footer h5 {
+   color: white;
+ }
+
+ footer a {
+   text-decoration: none;
+ }
+
+ footer a:hover, footer ul li a:hover {
+   text-decoration: underline !important;
+ }
+.cc-revoke {
+  display: none !important;
+}
+
+footer {
+  background: $headings-color;
+  font-size: 18px;
+  color: #fff;
+  font-family: "Source Serif Pro";
+  line-height: 22px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: -20vw;
+
+  p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+footer img {
+  width: 100px;
+  max-width: 10vw;
+}
+
+footer .icon {
+  width: 20%;
+  font-size: 21.6px;
+  margin-top: 9px;
+}
+
+footer h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13.5px;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+footer ul li {
+  line-height: 32px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer p {
+  font-size: inherit;
+  line-height: 28.8px;
+}

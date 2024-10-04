@@ -1,0 +1,26 @@
+template:
+  bootstrap: 5
+  bslib:
+    bg: "white"
+    fg: "#172431"
+    base_font: {google: "Open Sans"}
+    heading_font: {google: "Source Serif Pro"}
+    primary: "#007BC0"
+    border-radius: 0
+    headings-color: "#941120"
+    navbar-light-color: "$headings-color"
+    navbar-light-brand-color: "$headings-color"
+    navbar-light-hover-color: "$headings-color"
+    base_font_size: 1em
+    link-decoration: "none"
+
+navbar:
+  structure:
+    left:  [intro, reference, articles, tutorials]
+    right: [search, github, news]
+
+
+footer:
+  structure:
+    left: developed_by
+    right: [built_with]

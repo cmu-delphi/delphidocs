@@ -1,0 +1,68 @@
+---
+title: "Sample article"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(delphidocs)
+```
+
+## Header 1.2
+
+Lorem Ipsum [link]()
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, neque quis iaculis mollis, ex leo varius nunc, quis rhoncus tortor nisi at dui. Curabitur pharetra tempus magna a scelerisque. In mauris purus, posuere vitae ligula quis, porttitor rutrum velit. Cras feugiat nec elit sed faucibus. Nunc quis est volutpat augue bibendum suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst.
+
+Integer quis tortor malesuada, efficitur mauris placerat, tempus dui. Cras sit amet mauris non urna auctor ornare. Proin odio neque, iaculis et neque a, semper porta lectus. Quisque ac magna lobortis, bibendum risus ut, ultrices ex. Donec pretium turpis neque, quis aliquam dui luctus a. Vivamus sollicitudin iaculis consequat. Quisque in neque a nunc sagittis facilisis a sit amet orci.
+
+Duis accumsan leo accumsan, ultrices lectus eu, lobortis purus. Sed vitae justo eu enim faucibus efficitur. Ut lobortis ornare ligula. Cras et faucibus felis, quis porta neque. Cras et maximus nibh. Donec pellentesque pellentesque metus, ut luctus odio gravida non. Etiam lorem leo, pharetra eget posuere vitae, volutpat ut quam. Nam tempus nec diam non interdum. Proin vel arcu at ante vestibulum vehicula. Vivamus dignissim enim ac tortor pellentesque, sed accumsan orci ornare. In hac habitasse platea dictumst. Nullam dolor purus, fringilla non accumsan id, placerat quis lacus. Vestibulum in vestibulum lorem. Nunc luctus faucibus nibh vitae eleifend.
+
+Pellentesque aliquam ornare elementum. Sed accumsan ante eu pretium facilisis. Duis ut cursus orci, eget auctor nisl. Donec condimentum mollis dui, vel condimentum augue sodales id. Pellentesque eu ipsum commodo, vestibulum elit sed, aliquam est. Vestibulum nec augue mattis, vulputate orci sit amet, tincidunt felis. Aliquam dignissim vehicula urna, quis scelerisque augue interdum at. Sed ornare hendrerit leo, id posuere ante auctor ac. Vestibulum id odio a purus aliquet consectetur id vel ex. Vestibulum condimentum sit amet risus nec ornare. Cras dapibus nibh dui, non blandit tortor egestas non.
+
+Quisque sit amet fringilla mauris, id sollicitudin sem. Ut blandit tortor id ligula placerat, eu consectetur leo commodo. Mauris ultrices quam id vestibulum rhoncus. Nunc ac ligula vehicula, egestas eros ut, vehicula risus. Pellentesque laoreet, dolor vitae varius molestie, felis nisi hendrerit enim, sed porttitor metus nulla vel tellus. Vivamus augue nunc, rutrum vel iaculis ut, consequat ac lacus. Ut vel magna imperdiet, gravida turpis id, eleifend magna. Suspendisse id dui convallis, egestas erat eu, gravida magna. Pellentesque lacinia turpis vel molestie blandit.
+
+### Header 1.3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, neque quis iaculis mollis, ex leo varius nunc, quis rhoncus tortor nisi at dui. Curabitur pharetra tempus magna a scelerisque. In mauris purus, posuere vitae ligula quis, porttitor rutrum velit. Cras feugiat nec elit sed faucibus. Nunc quis est volutpat augue bibendum suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst.
+
+Integer quis tortor malesuada, efficitur mauris placerat, tempus dui. Cras sit amet mauris non urna auctor ornare. Proin odio neque, iaculis et neque a, semper porta lectus. Quisque ac magna lobortis, bibendum risus ut, ultrices ex. Donec pretium turpis neque, quis aliquam dui luctus a. Vivamus sollicitudin iaculis consequat. Quisque in neque a nunc sagittis facilisis a sit amet orci.
+
+Duis accumsan leo accumsan, ultrices lectus eu, lobortis purus. Sed vitae justo eu enim faucibus efficitur. Ut lobortis ornare ligula. Cras et faucibus felis, quis porta neque. Cras et maximus nibh. Donec pellentesque pellentesque metus, ut luctus odio gravida non. Etiam lorem leo, pharetra eget posuere vitae, volutpat ut quam. Nam tempus nec diam non interdum. Proin vel arcu at ante vestibulum vehicula. Vivamus dignissim enim ac tortor pellentesque, sed accumsan orci ornare. In hac habitasse platea dictumst. Nullam dolor purus, fringilla non accumsan id, placerat quis lacus. Vestibulum in vestibulum lorem. Nunc luctus faucibus nibh vitae eleifend.
+
+Pellentesque aliquam ornare elementum. Sed accumsan ante eu pretium facilisis. Duis ut cursus orci, eget auctor nisl. Donec condimentum mollis dui, vel condimentum augue sodales id. Pellentesque eu ipsum commodo, vestibulum elit sed, aliquam est. Vestibulum nec augue mattis, vulputate orci sit amet, tincidunt felis. Aliquam dignissim vehicula urna, quis scelerisque augue interdum at. Sed ornare hendrerit leo, id posuere ante auctor ac. Vestibulum id odio a purus aliquet consectetur id vel ex. Vestibulum condimentum sit amet risus nec ornare. Cras dapibus nibh dui, non blandit tortor egestas non.
+
+Quisque sit amet fringilla mauris, id sollicitudin sem. Ut blandit tortor id ligula placerat, eu consectetur leo commodo. Mauris ultrices quam id vestibulum rhoncus. Nunc ac ligula vehicula, egestas eros ut, vehicula risus. Pellentesque laoreet, dolor vitae varius molestie, felis nisi hendrerit enim, sed porttitor metus nulla vel tellus. Vivamus augue nunc, rutrum vel iaculis ut, consequat ac lacus. Ut vel magna imperdiet, gravida turpis id, eleifend magna. Suspendisse id dui convallis, egestas erat eu, gravida magna. Pellentesque lacinia turpis vel molestie blandit.
+
+## Header 2.2
+
+Lorem Ipsum [link]()
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, neque quis iaculis mollis, ex leo varius nunc, quis rhoncus tortor nisi at dui. Curabitur pharetra tempus magna a scelerisque. In mauris purus, posuere vitae ligula quis, porttitor rutrum velit. Cras feugiat nec elit sed faucibus. Nunc quis est volutpat augue bibendum suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst.
+
+Integer quis tortor malesuada, efficitur mauris placerat, tempus dui. Cras sit amet mauris non urna auctor ornare. Proin odio neque, iaculis et neque a, semper porta lectus. Quisque ac magna lobortis, bibendum risus ut, ultrices ex. Donec pretium turpis neque, quis aliquam dui luctus a. Vivamus sollicitudin iaculis consequat. Quisque in neque a nunc sagittis facilisis a sit amet orci.
+
+Duis accumsan leo accumsan, ultrices lectus eu, lobortis purus. Sed vitae justo eu enim faucibus efficitur. Ut lobortis ornare ligula. Cras et faucibus felis, quis porta neque. Cras et maximus nibh. Donec pellentesque pellentesque metus, ut luctus odio gravida non. Etiam lorem leo, pharetra eget posuere vitae, volutpat ut quam. Nam tempus nec diam non interdum. Proin vel arcu at ante vestibulum vehicula. Vivamus dignissim enim ac tortor pellentesque, sed accumsan orci ornare. In hac habitasse platea dictumst. Nullam dolor purus, fringilla non accumsan id, placerat quis lacus. Vestibulum in vestibulum lorem. Nunc luctus faucibus nibh vitae eleifend.
+
+Pellentesque aliquam ornare elementum. Sed accumsan ante eu pretium facilisis. Duis ut cursus orci, eget auctor nisl. Donec condimentum mollis dui, vel condimentum augue sodales id. Pellentesque eu ipsum commodo, vestibulum elit sed, aliquam est. Vestibulum nec augue mattis, vulputate orci sit amet, tincidunt felis. Aliquam dignissim vehicula urna, quis scelerisque augue interdum at. Sed ornare hendrerit leo, id posuere ante auctor ac. Vestibulum id odio a purus aliquet consectetur id vel ex. Vestibulum condimentum sit amet risus nec ornare. Cras dapibus nibh dui, non blandit tortor egestas non.
+
+Quisque sit amet fringilla mauris, id sollicitudin sem. Ut blandit tortor id ligula placerat, eu consectetur leo commodo. Mauris ultrices quam id vestibulum rhoncus. Nunc ac ligula vehicula, egestas eros ut, vehicula risus. Pellentesque laoreet, dolor vitae varius molestie, felis nisi hendrerit enim, sed porttitor metus nulla vel tellus. Vivamus augue nunc, rutrum vel iaculis ut, consequat ac lacus. Ut vel magna imperdiet, gravida turpis id, eleifend magna. Suspendisse id dui convallis, egestas erat eu, gravida magna. Pellentesque lacinia turpis vel molestie blandit.
+
+### Header 2.3
+
+Some more text to check 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, neque quis iaculis mollis, ex leo varius nunc, quis rhoncus tortor nisi at dui. Curabitur pharetra tempus magna a scelerisque. In mauris purus, posuere vitae ligula quis, porttitor rutrum velit. Cras feugiat nec elit sed faucibus. Nunc quis est volutpat augue bibendum suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst.
+
+Integer quis tortor malesuada, efficitur mauris placerat, tempus dui. Cras sit amet mauris non urna auctor ornare. Proin odio neque, iaculis et neque a, semper porta lectus. Quisque ac magna lobortis, bibendum risus ut, ultrices ex. Donec pretium turpis neque, quis aliquam dui luctus a. Vivamus sollicitudin iaculis consequat. Quisque in neque a nunc sagittis facilisis a sit amet orci.
+
+Duis accumsan leo accumsan, ultrices lectus eu, lobortis purus. Sed vitae justo eu enim faucibus efficitur. Ut lobortis ornare ligula. Cras et faucibus felis, quis porta neque. Cras et maximus nibh. Donec pellentesque pellentesque metus, ut luctus odio gravida non. Etiam lorem leo, pharetra eget posuere vitae, volutpat ut quam. Nam tempus nec diam non interdum. Proin vel arcu at ante vestibulum vehicula. Vivamus dignissim enim ac tortor pellentesque, sed accumsan orci ornare. In hac habitasse platea dictumst. Nullam dolor purus, fringilla non accumsan id, placerat quis lacus. Vestibulum in vestibulum lorem. Nunc luctus faucibus nibh vitae eleifend.
+
+Pellentesque aliquam ornare elementum. Sed accumsan ante eu pretium facilisis. Duis ut cursus orci, eget auctor nisl. Donec condimentum mollis dui, vel condimentum augue sodales id. Pellentesque eu ipsum commodo, vestibulum elit sed, aliquam est. Vestibulum nec augue mattis, vulputate orci sit amet, tincidunt felis. Aliquam dignissim vehicula urna, quis scelerisque augue interdum at. Sed ornare hendrerit leo, id posuere ante auctor ac. Vestibulum id odio a purus aliquet consectetur id vel ex. Vestibulum condimentum sit amet risus nec ornare. Cras dapibus nibh dui, non blandit tortor egestas non.
+
+Quisque sit amet fringilla mauris, id sollicitudin sem. Ut blandit tortor id ligula placerat, eu consectetur leo commodo. Mauris ultrices quam id vestibulum rhoncus. Nunc ac ligula vehicula, egestas eros ut, vehicula risus. Pellentesque laoreet, dolor vitae varius molestie, felis nisi hendrerit enim, sed porttitor metus nulla vel tellus. Vivamus augue nunc, rutrum vel iaculis ut, consequat ac lacus. Ut vel magna imperdiet, gravida turpis id, eleifend magna. Suspendisse id dui convallis, egestas erat eu, gravida magna. Pellentesque lacinia turpis vel molestie blandit.
