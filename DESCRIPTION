@@ -1,11 +1,11 @@
 Package: delphidocs
-Title: pkgdown template for CMU Delphi
+Title: pkgdown template for Delphi
 Version: 0.0.1
 Authors@R: c(
     person("Daniel J.", "McDonald", , "daniel@stat.ubc.ca", role = c("aut", "cre")),
-    person("CMU's Delphi Research Group", role = c("cph", "fnd"))
+    person("Delphi Research Group", role = c("cph", "fnd"))
   )
-Description: A pkgdown template for the CMU Delphi R packages.
+Description: A pkgdown template for the Delphi R packages.
 License: MIT + file LICENSE
 URL: https://github.com/cmu-delphi/delphidocs
 BugReports: https://github.com/cmu-delphi/delphidocs/issues
@@ -14,13 +14,16 @@ Depends:
 Imports: 
     cli,
     glue
-Config/Needs/website: rmarkdown
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: 
+    knitr
+Config/Needs/website: 
+    rmarkdown
+    cmu-delphi/delphidocs
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-Suggests: 
-    knitr,
-    rmarkdown
-VignetteBuilder: knitr

@@ -11,9 +11,9 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/delphidocs)](https://CRAN.R-project.org/package=delphidocs)
 <!-- badges: end -->
 
-`{delphidocs}` provides a custom pkgdown template for CMU Delphi
-packages. Please don’t use it for your own package, but feel free to
-modify it for your own purposes.
+`{delphidocs}` provides a custom pkgdown template for Delphi packages.
+Please don’t use it for your own package, but feel free to modify it for
+your own purposes.
 
 Inspired by [rotemplate](https://github.com/ropensci-org/rotemplate).
 
@@ -27,12 +27,16 @@ To use the `{delphidocs}` template for your pkgdown site, add the
 following to your `_pkgdown.yml` file:
 
 ``` yaml
+---
 template:
   package: delphidocs
+---
 ```
 
 You will also need to add the following to your `DESCRIPTION` file:
 
 ``` yaml
+---
 Config/Needs/website: cmu-delphi/delphidocs
+---
 ```
