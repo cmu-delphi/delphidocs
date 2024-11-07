@@ -6,7 +6,7 @@
 \alias{delphidocs-package}
 \title{delphidocs: pkgdown template for Delphi}
 \description{
-A pkgdown template for the CMU Delphi R packages.
+A pkgdown template for the Delphi R packages.
 }
 \seealso{
 Useful links:

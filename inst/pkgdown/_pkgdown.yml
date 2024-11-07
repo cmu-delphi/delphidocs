@@ -10,8 +10,15 @@ template:
     border-radius: 0
     headings-color: "#002676"
     navbar-light-color: "$headings-color"
-    navbar-light-brand-color: "$headings-color"
     navbar-light-hover-color: "$headings-color"
+    navbar-light-active-color: "$headings-color"
+    navbar-light-disabled-color: "$headings-color"
+    navbar-light-brand-color: "$headings-color"
+    navbar-light-brand-hover-color: "$headings-color"
+    navbar-light-icon-color: "$headings-color"
+    navbar-light-toggler-border-color: "$headings-color"
+    dropdown-link-color: "$headings-color"
+    dropdown-link-hover-bg: "#9411201a" # $primary w/ 10% opacity
     base_font_size: 1em
     link-decoration: "none"
 

@@ -13,4 +13,7 @@ colours
 \description{
 Some useful colours
 }
+\examples{
+colours
+}
 \keyword{datasets}

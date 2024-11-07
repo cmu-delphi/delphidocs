@@ -2,6 +2,8 @@
 "responses"
 
 #' Some useful colours
+#' @examples
+#' colours
 "colours"
 
 #' @importFrom cli cli_inform cli_h2 cat_line col_yellow
