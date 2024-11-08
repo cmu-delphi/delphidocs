@@ -30,44 +30,6 @@
 img.logo {
   width: 120px;
 }
-
-@media screen and (min-width: 768px) {
-  #hexlogo {
-    height: 30px;
-  }
-  .navbar .navbar-brand {
-    padding-top: 13px;
-    line-height: 19px;
-    padding-left: 10px;
-  }
-  .navbar .navbar-form {
-    margin: 3px 5px 3px 5px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-
-  /*
-  .navbar .navbar-brand {
-    padding-top: 10px;
-    padding-right: 0;
-    margin-right: -120px;
-    padding-left: 0px;
-    font-size: 1.2rem;
-  }
-  */
-
-  /*
- .nav-text.text-muted.me-auto {
-    font-size: 0.8rem;
- }
- */
-
-  #logo img {
-    height: 15px !important;
-  }
-}
-
 // undo designer choice in pkgdown to add a lot of whitespace under h1
 @media (min-width: 576px){
   .template-home .page-header {
@@ -75,17 +37,7 @@ img.logo {
   }
 }
 
-/*
-.nav-text.text-muted.me-auto {
-  color: #3b88bfff !important;
-}
-*/
 
-/*
-main h1 img {
-  max-width: 120px;
-}
-*/
 
 /* Reference index. To make it very different from h2 */
 .template-reference-index h3 {
@@ -99,13 +51,6 @@ main h1 img {
 }
 
 /* table of contents -------------------------------------------------------- */
-/*
-$pkgdown-toc-border-width: 3px !default;
-$pkgdown-toc-border-color: $primary !default;
-$pkgdown-toc-active-color: $primary !default;
-$pkgdown-toc-hover-bg: change-color($primary, $alpha: 0.2) !default;
-$pkgdown-toc-hover-color: $primary !default;
-*/
 
 // needed for scrollspy
 body {position: relative;}
@@ -184,18 +129,6 @@ aside {
   }
 }
 
-
-
-@media screen and (max-width: 480px) {
-    #logo > .img {
-
-}
-  .navbar .navbar-brand {
-    padding-top: 10px;
-    padding-right: 0;
-    margin-right: -120px;
-  }
-}
 
 
 /* Footer */
