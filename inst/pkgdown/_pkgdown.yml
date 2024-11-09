@@ -7,7 +7,7 @@ template:
     heading_font: {google: "Source Serif Pro"}
     primary: "#941120"
     secondary: "#8C338F"
-    border-radius: 0
+    border-radius: 0.2rem
     headings-color: "#002676"
     navbar-light-color: "$headings-color"
     navbar-light-hover-color: "$headings-color"
@@ -27,8 +27,14 @@ navbar:
     left:  [intro, reference, articles, tutorials]
     right: [search, github, news]
 
-
 footer:
   structure:
-    left: developed_by
-    right: [built_with]
+    left: links
+    right: package
+  components:
+    links:  |
+      [About Delphi](https://delphi.cmu.edu/about/) &#8226;
+      [Terms of Use](https://delphi.cmu.edu/epidemic-signals/terms-of-use/) &#8226;
+      [Contact Us](https://docs.google.com/forms/u/1/d/e/1FAIpQLScqgT1fKZr5VWBfsaSp-DNaN03aV6EoZU4YljIzHJ1Wl_zmtg/viewform) &#8226;
+      [Delphi GitHub](https://github.com/cmu-delphi/) &#8226;
+      [Epidata API](https://cmu-delphi.github.io/delphi-epidata/)

@@ -1,8 +1,9 @@
 /* Navbar */
 .navbar {
   transition: all 0.3s ease;
-  border-bottom: 3px solid $headings-color;
+  border-bottom: 2px solid $headings-color;
   background-color: $body-bg !important;
+  line-height: inherit;
 }
 
 #navbar {
@@ -12,8 +13,6 @@
 .navbar .navbar-brand {
   font-family: '"Source Serif Pro",Times,serif';
 }
-
-
 
 .page-header {
   border-bottom: none;
@@ -37,8 +36,6 @@ img.logo {
   }
 }
 
-
-
 /* Reference index. To make it very different from h2 */
 .template-reference-index h3 {
   font-size: 1.5rem;
@@ -55,50 +52,7 @@ img.logo {
 // needed for scrollspy
 body {position: relative;}
 
-/*
-
-#toc > .nav {
-  margin-bottom: 1rem;
-
-  h2 {
-      font-size: $font-size-lg;
-  }
-
-  li { font-size: 90%;
-  }
-
-  a.nav-link {
-    color: inherit;
-    padding: 0.25rem 0.5rem;
-    margin-bottom: 2px;
-    @include border-radius(0);
-
-    &:hover, &:focus {
-      background-color: $pkgdown-toc-hover-bg;
-      color: $primary;
-      text-decoration: none;
-      font-weight: 700 !important;
-      border-left: $pkgdown-toc-border-width solid $pkgdown-toc-border-color;
-    }
-    &.active {
-      background-color: transparent !important;
-      color: $primary;
-      font-weight: 700 !important;
-      border-left: 3px solid $primary;
-    }
-  }
-}
-
-*/
-
-
 aside {
-  /*
-  a {
-    color: "#ff9900" !important;
-  }
-  */
-
   padding-top: 1.5rem;
   border-left: 2px solid $headings-color;
 
@@ -131,28 +85,23 @@ aside {
 
 
 
-/* Footer */
 
+/* Footer ----------------------------------------------------------------- */
+
+.row > main { // space before the footer to match the space under the navbar
+  margin-bottom: 56px;
+}
+
+footer {
+  border-top: 2px solid $headings-color;
+  margin: 0 0 1rem 0;
+}
 
 /* Position hack to get full width footer even though pkgdown puts it inside a container
  * See: https://css-tricks.com/full-width-containers-limited-width-parents/
  */
 
- footer h5 {
-   color: white;
- }
-
- footer a {
-   text-decoration: none;
- }
-
- footer a:hover, footer ul li a:hover {
-   text-decoration: underline !important;
- }
-.cc-revoke {
-  display: none !important;
-}
-
+/*
 footer {
   background: $headings-color;
   font-size: 18px;
@@ -173,51 +122,4 @@ footer {
   }
 }
 
-footer img {
-  width: 100px;
-  max-width: 10vw;
-}
-
-footer .icon {
-  width: 20%;
-  font-size: 21.6px;
-  margin-top: 9px;
-}
-
-footer h5 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13.5px;
-  margin-bottom: 10px;
-}
-
-footer ul {
-  text-align: left;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-footer ul li {
-  line-height: 32px;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-footer a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-footer a {
-  color: #fff;
-}
-
-footer p {
-  font-size: inherit;
-  line-height: 28.8px;
-}
+*/
