@@ -7,6 +7,8 @@ template:
     heading_font: {google: "Source Serif Pro"}
     primary: "#941120"
     secondary: "#8C338F"
+    danger: "#C41230"
+    hover-bg: "#9411201a" # $primary w/ 10% opacity
     border-radius: 0.2rem
     headings-color: "#002676"
     navbar-light-color: "$headings-color"
@@ -18,7 +20,7 @@ template:
     navbar-light-icon-color: "$headings-color"
     navbar-light-toggler-border-color: "$headings-color"
     dropdown-link-color: "$headings-color"
-    dropdown-link-hover-bg: "#9411201a" # $primary w/ 10% opacity
+    dropdown-link-hover-bg: "$hover-bg"
     dropdown-link-active-bg: "white"
     link-decoration: "none"
 

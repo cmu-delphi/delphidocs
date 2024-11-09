@@ -12,6 +12,7 @@ A pkgdown template for the Delphi R packages.
 Useful links:
 \itemize{
   \item \url{https://github.com/cmu-delphi/delphidocs}
+  \item \url{https://cmu-delphi.github.io/delphidocs}
   \item Report bugs at \url{https://github.com/cmu-delphi/delphidocs/issues}
 }
 

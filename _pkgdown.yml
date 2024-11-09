@@ -1,3 +1,15 @@
-url: ~
+url: https://cmu-delphi.github.io/delphidocs
 template:
   package: delphidocs
+
+reference:
+- title: Package Documentation
+- contents:
+  - delphidocs-package
+- title: Functions
+- contents:
+  - consult_oracle
+- title: Data
+- contents:
+  - colours
+  - responses

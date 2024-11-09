@@ -7,7 +7,8 @@ Authors@R: c(
   )
 Description: A pkgdown template for the Delphi R packages.
 License: MIT + file LICENSE
-URL: https://github.com/cmu-delphi/delphidocs
+URL: https://github.com/cmu-delphi/delphidocs,
+    https://cmu-delphi.github.io/delphidocs
 BugReports: https://github.com/cmu-delphi/delphidocs/issues
 Depends: 
     R (>= 2.10)
@@ -19,8 +20,7 @@ Suggests:
     rmarkdown
 VignetteBuilder: 
     knitr
-Config/Needs/website: 
-    rmarkdown
+Config/Needs/website: rmarkdown
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
