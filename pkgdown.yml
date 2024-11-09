@@ -4,4 +4,7 @@ pkgdown_sha: ~
 articles:
   articles/delphidocs: delphidocs.html
   Development: Development.html
-last_built: 2024-11-09T01:45Z
+last_built: 2024-11-09T17:22Z
+urls:
+  reference: https://cmu-delphi.github.io/delphidocs/reference
+  article: https://cmu-delphi.github.io/delphidocs/articles
