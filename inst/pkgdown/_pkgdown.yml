@@ -1,5 +1,7 @@
 template:
   bootstrap: 5
+  default-mode: light
+  light-switch: true
   bslib:
     bg: "white"
     fg: "#172431"
@@ -27,7 +29,7 @@ template:
 navbar:
   structure:
     left:  [intro, reference, articles, tutorials]
-    right: [search, github, news]
+    right: [search, github, lightswitch, news]
 
 footer:
   structure:

@@ -2,3 +2,7 @@
 
 * Init the pkg.
 * Add some news items to check if this file appears.
+
+# delphidocs 0.0.2
+
+* Implement a light/dark mode toggle.
