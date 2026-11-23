@@ -1,10 +1,10 @@
-pandoc: 3.1.11
-pkgdown: 2.1.1
+pandoc: 3.8.3
+pkgdown: 2.2.1
 pkgdown_sha: ~
 articles:
   articles/delphidocs: delphidocs.html
   Development: Development.html
-last_built: 2024-11-09T17:22Z
+last_built: 2026-11-23T15:15Z
 urls:
   reference: https://cmu-delphi.github.io/delphidocs/reference
   article: https://cmu-delphi.github.io/delphidocs/articles

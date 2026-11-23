@@ -1,0 +1,60 @@
+# delphidocs
+
+[delphidocs](https://github.com/cmu-delphi/delphidocs) provides a custom
+pkgdown template for Delphi packages. Please don’t use it for your own
+package, but feel free to modify it for your own purposes.
+
+Inspired by [rotemplate](https://github.com/ropensci-org/rotemplate).
+
+## Installation
+
+You probably shouldn’t install this package. It’s just a template.
+
+## Using the template
+
+To use the [delphidocs](https://github.com/cmu-delphi/delphidocs)
+template for your pkgdown site, add the following to your `_pkgdown.yml`
+file:
+
+``` yaml
+---
+template:
+  package: delphidocs
+---
+```
+
+You will also need to add the following to your `DESCRIPTION` file:
+
+``` yaml
+---
+Config/Needs/website: cmu-delphi/delphidocs
+---
+```
+
+# Package index
+
+## Package Documentation
+
+- [`delphidocs`](https://cmu-delphi.github.io/delphidocs/reference/delphidocs-package.md)
+  [`delphidocs-package`](https://cmu-delphi.github.io/delphidocs/reference/delphidocs-package.md)
+  : delphidocs: pkgdown template for Delphi
+
+## Functions
+
+- [`consult_oracle()`](https://cmu-delphi.github.io/delphidocs/reference/consult_oracle.md)
+  : Consult the Pythia
+
+## Data
+
+- [`colours`](https://cmu-delphi.github.io/delphidocs/reference/colours.md)
+  : Some useful colours
+- [`responses`](https://cmu-delphi.github.io/delphidocs/reference/responses.md)
+  : Some things the oracle might say
+
+# Articles
+
+### All vignettes
+
+- [Sample
+  article](https://cmu-delphi.github.io/delphidocs/articles/delphidocs.md):
+- [Development](https://cmu-delphi.github.io/delphidocs/articles/Development.md):

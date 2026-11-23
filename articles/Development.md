@@ -1,0 +1,30 @@
+# Development
+
+``` r
+
+library(delphidocs)
+```
+
+## Some notes for adjusting various components
+
+You should be able to adjust `yml` variables controlling the styles.
+These are listed is the
+[bslib/\_variables.scss](https://github.com/rstudio/bslib/blob/112efd0/inst/lib/bs5/scss/_variables.scss#L1195).
+
+Other potentially useful resources:
+
+- The [tidyverse
+  template](https://github.com/tidyverse/tidytemplate/blob/main/inst/pkgdown/BS5/_pkgdown.yml)
+- The [hubStyle
+  template](https://github.com/hubverse-org/hubStyle/blob/main/inst/pkgdown/_pkgdown.yml)
+- The [rOpenSci
+  template](https://github.com/ropensci-org/rotemplate/blob/main/inst/pkgdown/_pkgdown.yml),
+  especially the footer.
+
+## When developing
+
+To test features using this repository, I typically have to install the
+package first before rebuilding the site locally. So you would iterate:
+
+1.  `devtools::install()`
+2.  [`pkgdown::build_site()`](https://pkgdown.r-lib.org/reference/build_site.html)
