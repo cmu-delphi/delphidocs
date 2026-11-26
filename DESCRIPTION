@@ -1,6 +1,6 @@
 Package: delphidocs
 Title: pkgdown template for Delphi
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(
     person("Daniel J.", "McDonald", , "daniel@stat.ubc.ca", role = c("aut", "cre")),
     person("Delphi Research Group", role = c("cph", "fnd"))

@@ -1,3 +1,49 @@
+/* Light Mode Default Variables */
+:root {
+  --bs-body-bg: white;
+  --bs-body-color: #172431;
+  --bs-navbar-border-color: #002676;
+  /* $headings-color */
+  --bs-heading-color: #002676;
+}
+
+/* Dark Mode Overrides */
+[data-bs-theme="dark"] {
+  --bs-body-bg: #121212;
+  --bs-body-color: #e4e6eb;
+
+  --bs-primary: #ff8a80;
+  --bs-secondary: #ea80fc;
+
+  --bs-heading-color: #8ab4f8;
+  --bs-link-color: #ff8a80;
+  --bs-link-hover-color: #ff5252;
+
+  --bs-navbar-border-color: #333333;
+  --bs-border-color: #333333;
+  --headings-color: #8ab4f8;
+
+  --surface-bg: #1e1e1e;
+
+  --bs-dropdown-bg: #1e1e1e;
+  --bs-dropdown-link-color: #e4e6eb;
+  --bs-dropdown-link-hover-color: #ffffff;
+  --bs-dropdown-link-hover-bg: #ff8a80;
+  --bs-dropdown-link-active-color: #ffffff;
+  --bs-dropdown-link-active-bg: #ff8a80;
+  --bs-dropdown-border-color: #333333;
+}
+
+/* Apply overrides to headings */
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4,
+[data-bs-theme="dark"] h5,
+[data-bs-theme="dark"] h6 {
+  color: var(--bs-heading-color);
+}
+
 /* Navbar */
 .navbar {
   transition: all 0.3s ease;
@@ -5,8 +51,14 @@
   background-color: $body-bg !important;
 }
 
+/* Navbar Polish for Dark Mode */
+[data-bs-theme="dark"] .navbar {
+  background-color: var(--surface-bg) !important;
+  border-bottom: 1px solid var(--bs-navbar-border-color);
+}
+
 #navbar {
-	font-family: '"Source Serif Pro",Times,serif';
+  font-family: '"Source Serif Pro",Times,serif';
 }
 
 .navbar .navbar-brand {
@@ -28,10 +80,11 @@
 img.logo {
   width: 120px;
 }
+
 // undo designer choice in pkgdown to add a lot of whitespace under h1
-@media (min-width: 576px){
+@media (min-width: 576px) {
   .template-home .page-header {
-      min-height: 0;
+    min-height: 0;
   }
 }
 
@@ -41,7 +94,13 @@ img.logo {
 }
 
 
-.heading-style, h1, h2, h3, h4, h5, h6 {
+.heading-style,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.15;
   margin: 2.75rem 0 1.05rem;
 }
@@ -49,22 +108,40 @@ img.logo {
 /* table of contents -------------------------------------------------------- */
 
 // needed for scrollspy
-body {position: relative;}
+body {
+  position: relative;
+}
 
 aside {
   padding-top: 1.5rem;
-  border-left: 2px solid $headings-color;
+  border-left: 2px solid var(--bs-heading-color);
 
   h2 {
     margin-top: 1.2rem;
     font-size: $font-size-lg;
   }
+
   .roles {
     color: mix($body-color, $body-bg, 80%);
   }
 
-  .list-unstyled li { margin-bottom: 0.5rem; }
-  .dev-status .list-unstyled li { margin-bottom: 0.1rem; }
+  .list-unstyled li {
+    margin-bottom: 0.5rem;
+  }
+
+  .dev-status .list-unstyled li {
+    margin-bottom: 0.1rem;
+  }
+}
+
+/* Sidebar Polish */
+[data-bs-theme="dark"] aside {
+  /* Add a surface background to distinguish from main content */
+  background-color: var(--surface-bg);
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border-left: none;
 }
 
 // Add some visual distinction between content and "sidebar" on mobile
@@ -87,13 +164,77 @@ aside {
 
 /* Footer ----------------------------------------------------------------- */
 
-.row > main { // space before the footer to match the space under the navbar
+.row>main {
+  // space before the footer to match the space under the navbar
   margin-bottom: 56px;
 }
 
 footer {
-  border-top: 2px solid $headings-color;
-  margin: 0 0 1rem 0;
+  border-top: 1px solid var(--bs-navbar-border-color);
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+/* Code Styles for Dark Mode */
+[data-bs-theme="dark"] div.sourceCode,
+[data-bs-theme="dark"] pre.sourceCode,
+[data-bs-theme="dark"] pre {
+  background-color: #2b2d31 !important;
+  color: #c9d1d9 !important;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+
+[data-bs-theme="dark"] code {
+  color: #e4e6eb;
+}
+
+/* Force Dropdown readability */
+[data-bs-theme="dark"] .dropdown-menu {
+  background-color: #1e1e1e !important;
+  border: 1px solid #484848;
+}
+
+[data-bs-theme="dark"] .dropdown-item {
+  color: #e4e6eb !important;
+  /* Force white text */
+}
+
+[data-bs-theme="dark"] .dropdown-item:hover,
+[data-bs-theme="dark"] .dropdown-item:focus {
+  background-color: #ff8a80 !important;
+  color: #121212 !important;
+  /* Dark text on salmon background for better contrast */
+}
+
+/* Fix invisible Selected Active Item */
+[data-bs-theme="dark"] .dropdown-item.active,
+[data-bs-theme="dark"] .dropdown-item:active {
+  background-color: #ff8a80 !important;
+  color: #121212 !important;
+}
+
+/* Neutralize Code Syntax Colors for Cleaner Look */
+[data-bs-theme="dark"] pre span {
+  color: #e4e6eb !important;
+  /* Force all syntax elements to white/grey */
+}
+
+/* Specific subtle highlighting */
+[data-bs-theme="dark"] code span.st {
+  color: #8ab4f8 !important;
+}
+
+/* Strings: Soft Blue */
+[data-bs-theme="dark"] code span.co {
+  color: #9aa0a6 !important;
+  font-style: italic;
+}
+
+/* Comments: Grey */
+[data-bs-theme="dark"] code span.kw {
+  color: #ff8a80 !important;
+  font-weight: bold;
 }
 
 /* Position hack to get full width footer even though pkgdown puts it inside a container
